@@ -5,21 +5,21 @@
 class English < Formula
   desc "Learning English with CLI."
   homepage "https://zeliclabs.com"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zelic91/english-binaries/releases/download/v1.0.0/english-binaries_Darwin_x86_64.tar.gz"
-      sha256 "711b71e4729e4f4c2c8fd0e61469892b6f142570b75a628b5cd82b9a561872af"
+      url "https://github.com/zelic91/english-binaries/releases/download/v1.1.0/english-binaries_Darwin_x86_64.tar.gz"
+      sha256 "c3bb1e29feddadb6377b43fcc3323d0d747aaa7801136c2d37e7ff5fb4833c74"
 
       define_method(:install) do
         bin.install "english"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zelic91/english-binaries/releases/download/v1.0.0/english-binaries_Darwin_arm64.tar.gz"
-      sha256 "afee737e841c55fc22c636e3b3437c4dc88fe4be99fa2b69cdad5e5d694a20aa"
+      url "https://github.com/zelic91/english-binaries/releases/download/v1.1.0/english-binaries_Darwin_arm64.tar.gz"
+      sha256 "1a49b06f806821b8648324ac42394f1f5e157df390033fd6cfe25d729eeea83e"
 
       define_method(:install) do
         bin.install "english"
@@ -29,15 +29,15 @@ class English < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zelic91/english-binaries/releases/download/v1.0.0/english-binaries_Linux_x86_64.tar.gz"
-      sha256 "4e073072aecb6a01c54a76ad260234f63ba9072027268ad70fd38c7ac35e9f09"
+      url "https://github.com/zelic91/english-binaries/releases/download/v1.1.0/english-binaries_Linux_x86_64.tar.gz"
+      sha256 "24c7c3263787775d0411aef896989a85ae06bc2c055b1f7d95732b99a0c3bf0c"
       define_method(:install) do
         bin.install "english"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zelic91/english-binaries/releases/download/v1.0.0/english-binaries_Linux_arm64.tar.gz"
-      sha256 "a4e42f805a8cd57740d31e8106859807c8659081c538a516069cfbf912e0943c"
+      url "https://github.com/zelic91/english-binaries/releases/download/v1.1.0/english-binaries_Linux_arm64.tar.gz"
+      sha256 "6f664df8368b7798ad3e40117352838018af4f1e4b2484e8a11781f6c26dee44"
       define_method(:install) do
         bin.install "english"
       end
